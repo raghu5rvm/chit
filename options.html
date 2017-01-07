@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=2.0 minimum-scale=0.1">
+	<link rel='stylesheet' href='css/styles.css'>
+	<link rel="icon" href="" type="image/x-icon">
+	<title>WEBRTC</title>
+</head>
+<body>
+	
+	<div class="s-grid1">
+		<div class="container-fluid header">
+		</div>
+	</div>
+	<center>
+		
+		<div class="menu" style="width:70%;">
+			<a href="chat"><div id="chat">Chat</div></a>
+			<a href="call"><div id="call">Call</div></a>
+			<a href="vcall"><div id="vcall">Video Call</div></a>
+		</div>
+		<br/><br/>
+		<h3 style="color:#C13E3E;">Happy New Year</h3><p style="opacity:0.5;margin-bottom:12px;"></p>
+	</center>
+	<div class="s-grid4">
+		<div class="footer-w31">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">Copyrights &copy 2016, CSE, RGUKT</div>
+					<div class="col-md-4">Guide:<em>K.K.Singh (H.O.D-CSE)</em></div>
+					<div class="col-md-4">Designed & Developed by:<em>Chitralekha.N, </em><em>Raghu.Ch</em></div>
+				</div>
+			</div>
+		</div>
+		<style>
+			a {
+				text-decoration:none;
+				}
+			.menu {
+				display:block;
+				font-family:Purisa,Kristen ITC,Times New Roman;
+				background:#4D4D4D;
+			}
+			.menu a div {
+				border:2px solid #E5E5E5;
+				color:#FFFFFF;
+				background:#4D4D4D;
+				font-size:20px;
+				height:20px;
+				width:100%;
+				transition:all 0.5s;
+				padding:50px 0px;
+				}
+				
+			#call:hover {
+				color:#4D4D4D;
+				background:#F59B9B;
+				transition:all 0.5s;
+				}
+			#chat:hover {
+				color:#4D4D4D;
+				background:#6ED560;
+				transition:all 0.5s;
+				}
+			#vcall:hover {
+				color:#4D4D4D;
+				background:#EDAE69;
+				transition:all 0.5s;
+				}
+				@media all and (max-width:850px){
+					.menu {
+						margin:10% 0%;
+						
+						}
+					.menu a div {
+						height:10px;
+						}
+					
+					}
+				
+		</style>
+
+</body>
+	<link type="text/javascript" href="js/bootstrap.min.js">
+	<link href="js/query-3.1.0.min.js">
+	<link href="js/jquery.flexslider.js">
+	<script>
+		
+		function getCookie(cname) {
+				var name = cname + "=";
+				var ca = document.cookie.split(';');
+				for(var i=0; i<ca.length; i++) {
+					var c = ca[i];
+					while (c.charAt(0)==' ')
+					 c = c.substring(1);
+					 if (c.indexOf(name) == 0)
+					  return c.substring(name.length, c.length);
+					}
+				return "";
+			}
+		
+		var addr=document.URL;
+		//alert(addr);
+		var	id,	myid, frndid;
+			temp=addr.split('?');
+			//alert(temp[0]+'  '+temp[1]);
+			id = temp[1].split('&');
+			//alert(id[0]+" "+id[1]);
+			myid=id[0].split('=');
+			frndid=id[1].split('=');
+			//alert(myid[1]+"   "+frndid[1]);
+			document.cookie="myid="+myid[1]+";path=/";
+			document.cookie="frndid="+frndid[1]+";path=/";
+			//alert('value of my id in cookie is :'+getCookie('myid')+' frndid :'+getCookie('frndid'));						
+	</script>
+</html>
