@@ -1,0 +1,73 @@
+body {
+background-image:url("../1bg.jpg") 50% no-repeat;
+background-size:contain;
+}
+div.s-grid2 {
+border:1px solid red;
+padding:9% 0%;
+padding-left:0;
+width:100%;
+height:567px;
+}
+
+div.menu {
+border:0px solid black;
+
+}
+
+
+}
+.o11,.o12,.o21,.o22 {
+padding-top:4%;
+}
+
+
+.opt {
+border:2px solid yellow;
+opacity:0.6;
+transition:all 0.8s;
+padding:5%;
+float:;
+margin:5px;
+height:50%;
+}
+
+
+.opt:hover {
+opacity:1;
+transition:all 0.5s;
+border-width:2px;
+}
+
+
+.footer-w31 {
+background: #222 none repeat scroll 0 0;
+box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.59);
+padding:15px 0px;
+color:#777;
+font-size:13px;
+border:2px solid white;
+height:6%;
+width: 100%;
+}
+
+em {
+color:#CECACA;
+}
+
+img {
+max-width:100%;
+}
+
+input, textarea {
+max-width:100%;
+}
+
+
+@media handheld {
+
+.col-md-3 {
+height:3px;
+}
+
+}
