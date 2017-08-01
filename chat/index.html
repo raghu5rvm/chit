@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="css/chat_styles.css">
 	<link rel="stylesheet" href="css/m_styles.css">
+	<link rel="stylesheet" href="../css/m_styles_common.css">
 	<link rel="icon" href="avatar.ico" type="image/x-icon">
 	<title>Title</title>
 </head>
@@ -15,38 +16,50 @@
 	<div class="chat">
       <div class="chat-header clearfix">
 		  <a href="../" title="back" ><img id="backBtn" alt="<" src="../images/back.png"></a>
-        <img src="../images/usr.png" id="avatar" alt="avatar"/>
-        <div class="chat-about">
-          <div class="chat-with"><span id="myid" style="color:#94C2ED;">myid</span><span style="margin:0% 5%;"></span><span id="frndid" style="color:#86BB71;">frndid </span></div>
-          <div class="chat-num-messages"></div>
-        </div>
-        <div style="margin-top:12px;">
-			<a href="../call"><img alt="call" class="link" src="../images/call.png" style="float:right;"></a>
-			<a href="../vcall"><img alt="vcall" class="link" src="../images/vcall.png" style="float:right;"></a>
-        </div>
-        <i class="fa fa-star"></i>
-      </div> <!-- end chat-header -->
-      
-      <div class="chat-history" id="cbox">
-        <ul id="mbox">
-        </ul>
-        
-      </div> <!-- end chat-history -->
+		  <img id="avatar" src="../images/usr.png" alt="avatar" />
+          <div class="chat-about">
+				<div class="chat-with"><span style="margin:0% 5%;"></span><span id="frndid" style="color:#86BB71;">room</span></div>
+				<div class="chat-num-messages"></div>
+		  </div>
+          <div style="margin-top:12px;">
+				<a href="../vcall" style="float:right;"><img alt="call" class="link" src="../images/vcall.png" ></a>
+				<a href="../call" style="float:right;margin-right:5px;"><img alt="chat" class="link" src="../images/call.png" ></a>
+		   </div>
+		
+		</div> <!-- end chat-header -->
+		
+      <div class="vid_display" style="border-width:2px 0px;border-color:#E5E5E5;">
+		  <!--<div class="showBtn">
+							<a id="msgBtn"><img id="sBtn" alt="msgs" src="../images/show_m.png" ></a>
+		</div>-->
+		<div class="chat-history" id="cbox">
+				<ul id="mbox_c">		
+				</ul>
+        	</div> <!-- end chat-history -->
+		</div>
+		</br>
+		<div class="chat-message clearfix text_entry">
+				<textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="2"></textarea>
+				<button id="sendBtn"><img alt="send" style="max-width:100%;height:100%;opacity:0.4;"src="../images/send4.png"> </button>       
+				<i class="fa fa-file-o"></i>&nbsp;&nbsp;&nbsp;
+				<i class="fa fa-file-image-o"></i>    
+		</div> <!-- end chat-message -->
+		</br>
+			<button id="endBtn" type='button' class='btn btn-success btn-block' style="transition:all 0.4s;width:98%;margin:1%;height:50px;">Call</button>
+			</br>
+			<div class="footer" style="width:100%;">
+				<div class="row">
+					<div class="col-md-4">Copyrights &copy 2016, CSE, RGUKT</div>
+					<div class="col-md-4">Guide:<em>K.K.Singh (H.O.D-CSE)</em></div>
+					<div class="col-md-4">Designed & Developed by:<em>Chitralekha.N, </em><em>Raghu.Ch</em></div>
+				</div>
+			</div>	
+		
+		</div>
 	</br>
-      <div class="chat-message clearfix text_entry">
-        <textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="2"></textarea>
-        <button id="sendBtn"><img alt="send" style="width:100%;height:100%;opacity:0.4;"src="../images/send4.png"></button>       
-        <i class="fa fa-file-o"></i>&nbsp;&nbsp;&nbsp;
-        <i class="fa fa-file-image-o"></i>    
-      </div> <!-- end chat-message -->
-    </div>
-	</div>
-	</br>
-	<script type='text/javascript' src="../js/jquery-3.1.0.min.js"></script>
 	<script type='text/javascript' src="../js/jquery.min.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
-	<script src="js/lib/adapter.js"></script>
+	<script src="../js/lib/adapter.js"></script>
 	<script src="js/main.js"></script>
-	
    	</body>
 </html>

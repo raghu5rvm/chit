@@ -26,8 +26,6 @@ var rm = null,
 
 
 if(myid!='notfound' || frndid!='notfound'){
-	document.getElementById('myid').innerHTML=myid+'-';
-	document.getElementById('frndid').innerHTML='-'+frndid;
 	rm=frndid+myid;
 	console.log('Checking room ' + rm);
 	socket.emit('create or join', myid, frndid);

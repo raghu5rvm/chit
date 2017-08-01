@@ -17,9 +17,6 @@ var rm = null,///room
     frndid =getCookie('frndid');
     console.log("myid is  "+myid+"    frined id is   "+frndid);
 	sendBtn.disable=true;
-	document.getElementById('myid').innerHTML    = myid;
-	document.getElementById('frndid').innerHTML  = frndid;
-	
 	phBtn.addEventListener('click', phone);
 	///checking if video call's enabled.....................................
 /*	var addr=document.URL,
@@ -55,6 +52,8 @@ socket.on('created', function (room, clientId) {
 	});
 
 socket.on('joined', function (room, clientId) {
+	rm=room;
+	
 	 console.log('This peer has joined room', room, 'with client ID', clientId);
 	});
 

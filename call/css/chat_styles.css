@@ -102,11 +102,13 @@ transition:all 0.7s;
 }
 
 .vid_display {
-height:456px;
+display:block;
+height:464px;
 width:100%;
 border:1px solid red;
 }
 
 .chat .chat-history {
-height:432px;
+display:block;
+height:100%;
 }

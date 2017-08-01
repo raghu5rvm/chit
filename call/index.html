@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="css/chat_styles.css">
 	<link rel="stylesheet" href="css/m_styles.css">
+	<link rel="stylesheet" href="../css/m_styles_common.css">
 	<link rel="icon" href="avatar.ico" type="image/x-icon">
 	<title>Title</title>
 </head>
@@ -17,7 +18,7 @@
 		  <a href="../" title="back" ><img id="backBtn" alt="<" src="../images/back.png"></a>
 		  <img id="avatar" src="../images/usr.png" alt="avatar" />
           <div class="chat-about">
-				<div class="chat-with"><span id="myid" style="color:#94C2ED;display:none;" >n120464</span><span style="margin:0% 5%;"></span><span id="frndid" style="color:#86BB71;">frndid</span></div>
+				<div class="chat-with"><span style="margin:0% 5%;"></span><span id="frndid" style="color:#86BB71;">room</span></div>
 				<div class="chat-num-messages"></div>
 		  </div>
           <div style="margin-top:12px;">
@@ -35,9 +36,12 @@
 				<ul id="mbox_c">		
 				</ul>
         	</div> <!-- end chat-history -->
-			<div id="rv" style="width:48%;height:15px;margin:;float:left;z-index:4;"><video id="rvideo" style="object-fit: fill;position:relative;height:100%;width:100%;" autoplay></video></div>
-			<div id="lv" style="width:48%;height:15px;margin:;float:right;z-index:5;"><video id="lvideo" style="object-fit: fill;position:relative;height:100%;width:100%;" autoplay></video></div>
 		</div>
+		<div class="videoContainer" style="height:2px;display:hidden;border-bottom:2px solid #E6E6FA;width:100%;padding:1px;margin-top:1%;display:hidden;">
+			<span id="rv" style="width:1px;height:0px;float:left;z-index:4;border:1px solid #B1CDE8;display:hidden;box-shadow:0px 0px 10px #B1CDE8;"><video id="rvideo" style="object-fit: fill;height:100%;width:100%;display:inline;" autoplay></video></span>
+			<span id="lv" style="width:1px;height:0px;float:right;z-index:5;border:1px solid #B1CDE8;display:hidden;box-shadow:0px 0px 10px #B1CDE8;"><video id="lvideo" style="object-fit: fill;height:100%;width:100%;display:inline;" autoplay></video></span>
+		</div>
+
 		</br>
 		<div class="chat-message clearfix text_entry">
 				<textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="2"></textarea>
@@ -60,7 +64,7 @@
 	</br>
 	<script type='text/javascript' src="../js/jquery.min.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
-	<script src="js/lib/adapter.js"></script>
+	<script src="../js/lib/adapter.js"></script>
 	<script src="js/main.js"></script>
    	</body>
 </html>
