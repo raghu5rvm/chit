@@ -1,0 +1,54 @@
+
+@media all and (max-width:650px){
+.chat {
+width:98%;
+margin:0%;
+}
+.chat .chat-header {
+padding:10px 5px;
+}
+
+#backBtn {
+width:30px;
+height:30px;
+opacity:0.6;
+margin:5px 0px 0px -5px;
+z-index:2;
+}
+
+
+#avatar {
+width: 40px;
+height: 40px;
+border: 4px solid transparent;
+border-radius:34px;
+padding:2px;z-index:3;
+box-shadow:3px 0px 1px 0px;
+}
+
+
+.link {
+width:30px;
+height:30px;
+margin:0% 15%;
+border-radius:;
+opacity:0.6;
+transition:all 0.7s;
+opacity:0.6;
+}
+.text_entry{
+width:95%;
+margin-left:2.5%;
+}
+#message-to-send {
+width:85%;
+margin:0%;
+}
+.chat .chat-history .message {
+padding:2% 5%;
+}
+
+
+
+
+}
