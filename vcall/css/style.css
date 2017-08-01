@@ -1,3 +1,7 @@
+img {
+max-width:100%;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -51,7 +55,7 @@ body {
 }
 .chat .chat-history {
   padding: 20px 15px;
-  border-bottom: 2px solid #BFBFBF;
+  border-bottom: 0px;
   overflow-y: scroll;
   height: 245px;
 }
